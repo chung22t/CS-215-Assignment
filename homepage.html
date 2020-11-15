@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> My Homepage </title>
+<link rel="stylesheet" type="text/css" href="movies_style.css" />
+<script type="text/javascript" src="login-validate.js"> </script>
+</head>
+<body>
+
+<h1>Welcome to Your Homepage</h1>
+<div class="grid-container">
+  <div class="item1">
+    <p>We have hundreds of movies that you can browse, rate, or add to your watch list.</p>
+    <a class="active" href="homepage.html">Home</a>
+    <a href="watchlist.html">Watchlist</a>
+    <a href="index.html">Log Off</a> 
+
+      <div class="search-container">
+         <form id="Search_Bar" method="post">
+        <label id="msg_search" class="err_msg"></label>
+
+        <input type="text" placeholder="Search.." name="search" required>
+       <!-- <button type="submit"><i class="fa fa-search"></i></button>-->
+       <form action="movies-details.html">
+		<input type="submit" value="Search" />
+        </form>
+        </form> 
+
+        <form action="movies-details.html">
+        <label>Search By:</label>
+        <select name="sort" id="sort">
+         <option value="rating">Rating</option>
+         <option value="title">Title</option>
+         <option value="year">Year</option>
+        </select>
+         <!--<br><br> -->
+         <input type="submit" value="Submit">
+         </form>
+      </div>
+  </div>
+  <div class="item2">
+     <p>
+     Movies by Their Genre
+    </p>
+
+    <ul>
+      <li><a href="movies-details.html"> Action</a></li>
+      <li><a href="movies-details.html"> Adventure</a></li>
+      <li><a href="movies-details.html"> Biography</a></li>
+      <li><a href="movies-details.html"> Comedy</a></li>
+      <li><a href="movies-details.html"> Crime</a></li>
+      <li><a href="movies-details.html"> Drama</a></li>
+      <li><a href="movies-details.html"> Family</a></li>
+      <li><a href="movies-details.html"> Fantasy</a></li>
+      <li><a href="movies-details.html"> Horror</a></li>
+      <li><a href="movies-details.html"> Musical</a></li>
+      <li><a href="movies-details.html"> Mystery</a></li>
+      <li><a href="movies-details.html"> Patriotic</a></li>
+      <li><a href="movies-details.html"> Romance</a></li>
+      <li><a href="movies-details.html"> Sci-Fi</a></li>
+      <li><a href="movies-details.html"> Social</a></li>
+      <li><a href="movies-details.html"> Sports</a></li>
+      <li><a href="movies-details.html"> Spy</a></li>
+      <li><a href="movies-details.html"> Suspense</a></li>
+      <li><a href="movies-details.html"> Thriller</a></li>
+      <li><a href="movies-details.html"> War</a></li>
+      <li><a href="movies-details.html"> Western</a></li>
+      <li><a href="movies-details.html"> Wuxia</a></li>
+      <li><a href="movies-details.html"> Zombie</a></li> 
+    </ul>
+  </div>
+  <div class="item3">
+    <div class="Movie"><a href="movies-details.html"> Movie Title</a><br>
+   <img id="pic" src="temp_poster.jpg" width= "100%">
+</div>
+<div class="Movie">
+  <a href="movies-details.html"> Movie Title</a><br>
+  <img id="pic" src="temp_poster.jpg" width= "100%"></div>  
+<div class="Movie">
+  <a href="movies-details.html"> Movie Title</a><br>
+   <img id="pic" src="temp_poster.jpg" width= "100%"></div>
+<div class="Movie"><a href="movies-details.html"> Movie Title</a><br>
+   <img id="pic" src="temp_poster.jpg" width= "100%"></div>
+<div class="Movie">
+  <a href="movies-details.html"> Movie Title</a><br>
+  <img id="pic" src="temp_poster.jpg" width= "100%"></div>
+<div class="Movie">
+  <a href="movies-details.html"> Movie Title</a><br>
+  <img id="pic" src="temp_poster.jpg" width= "100%"></div>
+</div>  
+
+  <div class="item4">
+    <p>
+     Movies by Their Country of Origin
+    </p>
+
+    <ul>
+      <li><a href="movies-details.html"> American</a></li>
+      <li><a href="movies-details.html"> Australian</a></li>
+      <li><a href="movies-details.html"> Bollywood</a></li>
+      <li><a href="movies-details.html"> British</a></li>
+      <li><a href="movies-details.html"> Canadian</a></li>
+      <li><a href="movies-details.html"> Chinese</a></li>
+      <li><a href="movies-details.html"> Japanese</a></li>
+      <li><a href="movies-details.html"> Punjabi</a></li>
+      <li><a href="movies-details.html"> Russian</a></li>
+    </ul>
+  </div>
+</div>
+
+<script type="text/javascript" src="handler.js"></script>
+</body>
+</html>

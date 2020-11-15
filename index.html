@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Movies-login </title>
+   <link rel="stylesheet" type="text/css" href="movies_style.css" /> 
+   <script type="text/javascript" src="login-validate.js"> </script>
+  </head>
+
+  <body class="index">
+    <header>
+    <h1 class="welcome"> Welcome to All About Movies </h1>
+    </header>
+    <hr/> 
+
+
+    <form id="Login" method="POST">
+    <table>
+			<tr>
+				<td>&nbsp;</td>
+			<!--	<td><label id="msg_uname" class="err_msg"></label></td> -->
+			</tr>
+    
+     <label id="msg_email" class="err_msg" for="email"></label><br>
+     <b>Email</b>
+     <input tpye="text" placeholder="Enter Email" name="email" required> <br><br>
+     
+     <label id="msg_uname" class="err_msg" for="username"></label><br>
+     <b>Username</b>
+    <input type="text" placeholder="Enter Username" name="username" required> <br><br>
+
+    <!--------------------->
+
+   <label id="msg_pswd" class="err_msg" for="pswd"></label><br>
+   <b>Password</b>
+    <input type="password" placeholder="Enter Password" name="pswd" required> <br>
+  </div>
+  <br>
+
+<form action="hompage.html">
+  <input type="submit" value="Enter" />
+  </form>
+</form>
+
+<div class="clearfix">
+    <form action="homepage.html">
+    <input type="submit" value="Login" />
+    </form>   
+  </div>
+    <br>
+  
+<div>
+  <form action="index.html">
+  <input type="submit" value="Cancel" />
+  </form> 
+</div>
+</hr>
+</table>
+
+     
+    Don't have an account yet? <a href="signup.html" target="_blank">sign up</a><br>
+
+    If you don't want to create an account now. <a href="homepage.html"> Continue as Guest </a><br>
+
+    <a href="test.html"> test </a>
+
+
+  <!-- <script type="text/javascript" src="handler.js"></script>-->
+  </body>
+  <script type="text/javascript" src="index-handler.js"></script>
+ 
+
+</html>

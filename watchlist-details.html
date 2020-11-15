@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+<link rel="stylesheet" type="text/css" href="movies_style.css" />
+
+<div>
+   <a class="active" href="homepage.html">Home</a>
+    <a href="watchlist.html">Watchlist</a>
+    <a href="index.html">Log Off</a> 
+</div>
+
+<div id="myDIV" class="header">
+  <h2 style="margin:5px">Watchlist</h2>
+  <input type="text" id="myInput" placeholder="Title...">
+  <span onclick="newElement()" class="addBtn">Add</span>
+</div>
+
+<ul id="myUL">
+  <li>The Dark Knight <br>
+    Rating 5/5
+     <img id="pic" src="temp_poster.jpg" width= "10%">
+  </li>
+  <li class="checked">Raiders of the Lost Ark<br>
+    Rating 4/5
+    <img id="pic" src="temp_poster.jpg" width= "10%">
+  </li>
+  <li>The Godfather <br>
+    Rating 5/5
+    <img id="pic" src="temp_poster.jpg" width= "10%">
+  </li>
+  <li>Star Wars Episode IV: A New Hope <br>
+    Rating 4/5
+    <img id="pic" src="temp_poster.jpg" width= "10%">
+  </li>
+  <li>The Good, the Bad, and the Ugly <br>
+    Rating 5/5
+    <img id="pic" src="temp_poster.jpg" width= "10%">
+  </li>
+  <li>Gladiator <br>
+    Rating 5/5
+    <img id="pic" src="temp_poster.jpg" width= "10%">
+  </li>
+</ul>
+
+<script>
+// Create a "close" button and append it to each list item
+var myNodelist = document.getElementsByTagName("LI");
+var i;
+for (i = 0; i < myNodelist.length; i++) {
+  var span = document.createElement("SPAN");
+  var txt = document.createTextNode("\u00D7");
+  span.className = "close";
+  span.appendChild(txt);
+  myNodelist[i].appendChild(span);
+}
+
+// Click on a close button to hide the current list item
+var close = document.getElementsByClassName("close");
+var i;
+for (i = 0; i < close.length; i++) {
+  close[i].onclick = function() {
+    var div = this.parentElement;
+    div.style.display = "none";
+  }
+}
+
+// Add a "checked" symbol when clicking on a list item
+var list = document.querySelector('ul');
+list.addEventListener('click', function(ev) {
+  if (ev.target.tagName === 'LI') {
+    ev.target.classList.toggle('checked');
+  }
+}, false);
+
+// Create a new list item when clicking on the "Add" button
+function newElement() {
+  var li = document.createElement("li");
+  var inputValue = document.getElementById("myInput").value;
+  var t = document.createTextNode(inputValue);
+  li.appendChild(t);
+  if (inputValue === '') {
+    alert("You must write something!");
+  } else {
+    document.getElementById("myUL").appendChild(li);
+  }
+  document.getElementById("myInput").value = "";
+
+  var span = document.createElement("SPAN");
+  var txt = document.createTextNode("\u00D7");
+  span.className = "close";
+  span.appendChild(txt);
+  li.appendChild(span);
+
+  for (i = 0; i < close.length; i++) {
+    close[i].onclick = function() {
+      var div = this.parentElement;
+      div.style.display = "none";
+    }
+  }
+}
+</script>
+
+</body>
+</html>

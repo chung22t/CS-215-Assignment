@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> My Watchlists </title>
+    <link rel="stylesheet" type="text/css" href="movies_style.css" />
+    <script type="text/javascript" src="login-validate.js"> </script>
+  </head>
+
+
+
+<body>
+  <div class="watchlist-container">
+<div class="details-header">
+   <a class="active" href="homepage.html">Home</a>
+    <a href="watchlist.html">Watchlist</a>
+    <a href="index.html">Log Off</a> 
+
+      <!--<div class="search-container">
+        <form action="movies-details.html">
+        <input type="text" placeholder="Search.." name="search">
+        <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+     </div> -->
+     <h1> My Watchlists </h1> 
+</div>
+
+<div class="watchlists">
+    <a href="watchlist-details.html"> Watchlist 1</a>
+    <input type="submit" value="Delete"><br>
+    <a href="watchlist-details.html"> Watchlist 2</a>
+    <input type="submit" value="Delete"><br>
+    <a href="watchlist-details.html"> Watchlist 3</a>
+    <input type="submit" value="Delete"><br>
+</div>
+
+
+<div class="create-list">
+  <form id="create_watchlist" method="post">
+  <p> Create New Watchlist </p>
+
+   <label id="msg_watchlist" class="err_msg" for="watchlistname"></label><br>
+   <b>Watchlist Name</b>
+    <input id="list_input" type="text" placeholder="Enter Watchlist Name" onkeyup="charcountupdate(this.value)" name="watchlistname" required> <br><br>
+
+    
+
+    <!-- <label id="msg_email" class="err_msg" for="email"></label><br>
+     <b>Email</b>
+     <input tpye="text" placeholder="Enter Email" name="email" required> <br><br> -->
+
+    <form action="watchlist-details.html">
+    <input type="submit" value="Create" />
+    </form>
+    <span id=charcount></span>
+  </form>
+
+</div>
+
+</div>
+
+<script type="text/javascript" src="handler.js"></script>
+</body>
+</html>
